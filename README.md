@@ -63,3 +63,7 @@ While executing the file one needs to pass three command line arguments:
 java Driver sendermail@gmail.com asdftyhuijgtredf receiver@gmail.com
 ```
 
+  ![Demo_EmailImage](https://user-images.githubusercontent.com/104207247/191587732-a88ed3d8-3133-4753-b35b-6eda56cf7fcf.jpeg)
+
+
+  
