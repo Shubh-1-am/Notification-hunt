@@ -52,7 +52,34 @@ You may also visit [this](https://www.javatpoint.com/java-mail-api-tutorial) sit
 
 ## Usage
 
-While executing the file one needs to pass three command line arguments:
+Before using this program, you need to set up the following:
+
+* Install jsoup library and add it to your classpath
+* Install JavaMail API and add it to your classpath
+* Set up a Gmail App password for sending emails 
+    (An App Password is a 16-digit passcode that gives a less secure app or device permission to access your Google Account)
+```
+#!/bin/bash
+
+# Set JSOUP_HOME environment variable
+export JSOUP_HOME=~/Desktop/JSOUP
+
+# Set CLASSPATH environment variable to include jsoup library
+export CLASSPATH=$CLASSPATH:$JSOUP_HOME/jsoup-1.15.2.jar:.
+
+# Set JAVA_MAIL environment variable
+export JAVA_MAIL=~/Desktop/JAVAMAIL
+
+# Set CLASSPATH environment variable to include JavaMail library files
+export CLASSPATH=$CLASSPATH:$JAVA_MAIL/activation-1.1.jar:.
+export CLASSPATH=$CLASSPATH:$JAVA_MAIL/javax.mail.jar:.
+
+```
+Replace ~/Desktop/JSOUP and ~/Desktop/JAVAMAIL with the paths where you have installed the jsoup library and JavaMail API, respectively. 
+
+After running this script, you can proceed to use the program.
+
+While executing the main java file one needs to pass three command line arguments:
 1. The sender's EmailId
 2. 16 digit app authentication password
 
